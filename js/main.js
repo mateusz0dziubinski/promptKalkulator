@@ -1,35 +1,32 @@
-function mojaFunkcja(){
-    var numberX =Number(prompt("Podaj pierwszą liczbę"));
-    var numberY =Number(prompt("Podaj drugą liczbę"));
-    if (numberX, numberY){
-        document.getElementById("liczba1").innerHTML = "Liczba 1:" + " " + + numberX;
-        document.getElementById("liczba2").innerHTML = "Liczba 2:" + " " + + numberY;
-    }
+let pierwszaLiczba = 0;
+let drugaLiczba = 0;
 
+function mojaFunkcja() {
+  pierwszaLiczba = Number(prompt("podaj pierwszą liczbę"));
+  drugaLiczba = Number(prompt("podaj drugą liczbę"));
+
+  document.getElementById("liczba1").textContent = pierwszaLiczba;
+  document.getElementById("liczba2").textContent = drugaLiczba;
 }
+
+
 function mojaFunkcjaDodawania(){
-    var numberX =Number(prompt("Podaj pierwszą liczbę"));
-    var numberY =Number(prompt("Podaj drugą liczbę"));
-    var suma = numberX + numberY;
-    if (numberX, numberY){
-        document.getElementById("ekranKalkulatora").innerHTML = suma;
+    suma = pierwszaLiczba + drugaLiczba;
+    if(pierwszaLiczba, drugaLiczba){
+    document.getElementById("ekranKalkulatora").textContent = suma;
     }
 }
 
 function mojaFunkcjaOdejmowania(){
-    var numberX =Number(prompt("Podaj pierwszą liczbę"));
-    var numberY =Number(prompt("Podaj drugą liczbę"));
-    var wynikOdejmowania = numberX - numberY;
-    if (numberX, numberY){
+    var wynikOdejmowania = pierwszaLiczba - drugaLiczba;
+    if (pierwszaLiczba, drugaLiczba){
         document.getElementById("ekranKalkulatora").innerHTML = wynikOdejmowania;
     }
 }
 
 function mojaFunkcjaMnozenia(){
-    var numberX =Number(prompt("Podaj pierwszą liczbę"));
-    var numberY =Number(prompt("Podaj drugą liczbę"));
-    var wynikMnozenia = numberX * numberY;
-    if (numberX, numberY){
+    var wynikMnozenia = pierwszaLiczba * drugaLiczba;
+    if (pierwszaLiczba, drugaLiczba){
         document.getElementById("ekranKalkulatora").innerHTML = wynikMnozenia;
     }
 }
